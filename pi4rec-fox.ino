@@ -26,11 +26,12 @@ void loop() {
   cw_dah(); cw_dit(); cw_dit(); cw_dah(); delay(dottime*3);
   delay(1000);
   dottime=250;
-  // Select fox A/B/C/D:
+  // Select fox A/B/C/E:
   for (i=1; i<25; i++) {
      cw_dit(); cw_dah(); delay(dottime*3);                    // fox A
 //  cw_dah(); cw_dit(); cw_dit(); cw_dit(); delay(dottime*3); // fox B
 //  cw_dah(); cw_dit(); cw_dah(); cw_dit(); delay(dottime*3); // fox C
+//  fox D is skipped, too much confusion with fox B for non-CW guys
 //  cw_dit(); delay(dottime*3);                               // fox E
   }
   delay(1000);
